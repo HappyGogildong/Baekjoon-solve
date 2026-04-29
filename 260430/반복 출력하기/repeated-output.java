@@ -1,3 +1,5 @@
+import java.io.*;
+
 public class Main {
 
     public static void printer(int n){
@@ -6,7 +8,9 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
-        printer(4);
+    public static void main (String[] args) throws IOException{
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(bf.readLine());
+        printer(n);
     }
 }
